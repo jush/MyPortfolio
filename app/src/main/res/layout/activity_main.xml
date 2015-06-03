@@ -62,7 +62,6 @@
         style="?attr/buttonStyle"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:onClick="ownApp"
         android:text="@string/own_app"
         android:theme="@style/Button.Purple"/>
 

@@ -14,6 +14,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Unfortunately the app compat Button with custom theme doesn't support setting onClick
+        // in the layout directly so we do it manually here
+        findViewById(R.id.ownBt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ownApp(v);
+            }
+        });
     }
 
     @Override
